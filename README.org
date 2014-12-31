@@ -1,0 +1,28 @@
+** About
+
+This micro-package provides an additional =date= thing for
+=thing-at-point= function.
+
+** Installation and Using
+
+1. Add a directory with =date-at-point.el= to the =load-path=:
+
+   #+BEGIN_SRC emacs-lisp
+   (add-to-list 'load-path "/path/to/date-at-point")
+   #+END_SRC
+
+2. Require the package:
+
+   #+BEGIN_SRC emacs-lisp
+   (require 'date-at-point)
+   #+END_SRC
+
+   Now you can use =(thing-at-point 'date)= or =(date-at-point)= in your
+   elisp code.
+
+   Alternatively (if you don't want to require it), use an autoload for
+   =date-at-point= function:
+
+   #+BEGIN_SRC emacs-lisp
+   (autoload 'date-at-point "date-at-point")
+   #+END_SRC
