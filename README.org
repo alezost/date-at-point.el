@@ -3,7 +3,14 @@
 This micro-package provides an additional =date= thing for
 =thing-at-point= function.
 
-** Installation and Using
+** Installation
+
+*** Automatic
+
+This package can be installed from [[http://melpa.org/][MELPA]] (with =M-x package-install= or
+=M-x list-packages=).
+
+*** Manual
 
 1. Add a directory with =date-at-point.el= to the =load-path=:
 
