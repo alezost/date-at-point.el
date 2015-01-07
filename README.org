@@ -1,3 +1,7 @@
+[[http://www.gnu.org/licenses/gpl-3.0.txt][file:https://img.shields.io/badge/license-GPL_3-orange.svg]]
+[[http://melpa.org/#/date-at-point][file:http://melpa.org/packages/date-at-point-badge.svg]]
+[[http://stable.melpa.org/#/date-at-point][file:http://stable.melpa.org/packages/date-at-point-badge.svg]]
+
 ** About
 
 This micro-package provides an additional =date= thing for
