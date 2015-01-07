@@ -1,6 +1,6 @@
 ;;; date-at-point.el --- Add `date' to `thing-at-point' function
 
-;; Copyright © 2014 Alex Kost
+;; Copyright © 2014-2015 Alex Kost
 
 ;; Author: Alex Kost <alezost@gmail.com>
 ;; Created: 31 Dec 2014
@@ -40,6 +40,9 @@
 (defvar date-at-point-regexp
   "[0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}"
   "Regular expression matching a date.")
+
+(declare-function thing-at-point-looking-at "thingatpt"
+                  (regexp &optional distance))
 
 (defun date-at-point-bounds ()
   "Return the bounds of the date at point."
