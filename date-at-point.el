@@ -32,15 +32,20 @@
 ;; 1. Add (require 'date-at-point) to your elisp code.
 ;; 2. Use (thing-at-point 'date).
 
-;; By default, a date in "2013-03-09"-like format is matched.  This can
-;; be changed with `date-at-point-regexp' variable.
+;; A default regexp (`date-at-point-regexp') is trying to match any
+;; possible date style, e.g.: "2014-12-31", "31.12.2014", "12/31/14",
+;; etc.  If you find problems with the current regexp, please contact
+;; the maintainer.
 
 ;;; Code:
 
 (require 'thingatpt)
 
 (defvar date-at-point-regexp
-  "[0-9]\\{4\\}-[0-9]\\{2\\}-[0-9]\\{2\\}"
+  (let ((separator  (rx (any "-./")))
+        (2-digits   (rx (repeat 2 digit)))
+        (2-4-digits (rx (repeat 2 4 digit))))
+    (concat 2-4-digits separator 2-digits separator 2-4-digits))
   "Regular expression matching a date.")
 
 (defun date-at-point-bounds ()
