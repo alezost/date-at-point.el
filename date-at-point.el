@@ -5,7 +5,6 @@
 ;; Author: Alex Kost <alezost@gmail.com>
 ;; Created: 31 Dec 2014
 ;; Version: 0.1
-;; URL: https://gitorious.org/alezost-emacs/date-at-point
 ;; URL: https://github.com/alezost/date-at-point.el
 ;; Keywords: convenience
 
